@@ -71,7 +71,6 @@ function startGame () {
 
     let restart = document.getElementsByClassName('restart').item(0);
     restart.addEventListener('click', function() {
-      clearInterval(timerId);
       startGame();
     });
 
@@ -85,7 +84,6 @@ function startGame () {
     let replay = document.getElementById("replay");
     replay.addEventListener('click', function() {
       complete.style.display = "none";
-      clearInterval(timerId);
       startGame();
     });
 
@@ -178,9 +176,10 @@ function lockCard () {
     currCards.pop();
 
     if(matchedCounter == 8) {
+        clearInterval(timerId);
         result = document.getElementsByClassName("result").item(0);
         starCounter = document.getElementsByClassName("fa fa-star").length;
-        result.innerHTML = `With ${moveCounter} Moves and ${starCounter} Stars.`;
+        result.innerHTML = `In ${minutes} minutes : ${seconds} seconds With ${moveCounter} Moves and ${starCounter} Stars.`;
         complete.style.display = "block";
     }
 }
