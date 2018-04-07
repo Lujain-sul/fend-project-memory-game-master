@@ -116,14 +116,14 @@ h4 {
  */
 
 @keyframes shaken {
-    10% { 
-        transform: translate(-1px, -2px) rotate(-1deg); 
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
     }
-    20% { 
-        transform: translate(-3px, 0px) rotate(1deg); 
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
     }
-    30% { 
-        transform: translate(3px, 2px) rotate(0deg); 
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
     }
 }
 
@@ -155,16 +155,25 @@ h4 {
 }
 
 /*
+ * Styles for the Clock
+ */
+
+#clock {
+  padding-left: 0.5em;
+  padding-right: 0.3em; 
+}
+
+/*
  * Styles for the Modal
  */
 
 .modal {
     width: 40%;
     height: 90%;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     border-radius: 10px;
-    display: none; 
-    position: fixed; 
+    display: none;
+    position: fixed;
     z-index: 1;
 }
 
@@ -176,7 +185,6 @@ h4 {
     height: 30px;
     background-color: #02ccba;
     -webkit-text-fill-color: #ffffff;
-    border: none;    
+    border: none;
     border-radius: 0.3em;
 }
-
