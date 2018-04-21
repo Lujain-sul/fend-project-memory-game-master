@@ -8,6 +8,7 @@
 ## Instructions
 
 The project functionalities are built in `js/app.js`, the app is building dynamic cards in which each pair should be matched to complete Memory Game.
+You can find a live game at https://lujain-sul.github.io/fend-project-memory-game-master/
 
 ## Contributing
 
